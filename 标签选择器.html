@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器就是以标签命名的选择器 */
+        /* 选中所有的标签都会生效，所有的p标签都会生效 */
+        p{
+            color: aqua;
+        }
+        /* 定义类选择器 */
+        .one{
+            color: darkmagenta;
+        }
+        .size{
+            font-size: 66px;
+        }
+        /* id选择器，用来配合js来使用的，一个页面是唯一的，不可以重复，也就是定义一个只能用一次 */
+        #two{
+            color: darkturquoise;
+        }
+        /* 通配符选择器,选中所有标签 */
+        *{
+            color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <p>pppppp</p>
+    <!-- 使用类选择器,可以一个标签使用多个类名，空格隔开就可以 -->
+    <p class="one size">ssssssssss</p>
+    <p id="two">使用id选择器</p>
+    <div>div</div>
+    <span>span</span>
+    <h1>h1</h1>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* font-size: large; */
+            /* 提示css属性是单词的首字母 */
+            font-size: large;
+            font-weight: 400;
+            font-weight: normal;
+            width: 1px;
+            height: 2px;
+            background-color: #000;
+            line-height: 3px
+            /* 宽300，高200,背景色是粉色 */
+        }
+
+        p{
+            /* w300+h200+bgc */
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <h1></h1>
+
+    <!-- 生成div带类名的.div -->
+    <div class="box"></div>
+
+    <!-- p.box -->
+    <p class="box"></p>
+
+    <!-- #box -->
+    <div id="box"></div>
+
+    <p id="box"></p>
+
+    <!-- 可以连写 -->
+    <p class="read" id="one"></p>
+
+    <!-- 生成div以及同级之下的p div+p-->
+    <div></div>
+    <p></p>
+
+    <!-- div>p -->
+    <div>
+        <p></p>
+    </div>
+
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- ul中有三个li -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- ul里有li同时里面有文字 -->
+    <ul>
+        <li>333</li>
+    </ul>
+
+    <ul>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ul>
+
+    <!-- li里面的文字分别是1,2,3 -->
+    <!-- ul>li{$}*3 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul>
+        <li>a1</li>
+        <li>a2</li>
+        <li>a3</li>
+    </ul>
+
+    
+
+</body>
+</html>

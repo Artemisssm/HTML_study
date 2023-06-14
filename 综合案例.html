@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height: 800px;
+            /* background-color: pink; */
+            margin: 0 auto;
+        }
+        .center{
+            text-align: center;
+        }
+        .coler1{
+            color: #808080;
+        }
+        .coler2{
+            color: #87ceeb;
+            /* 用于加粗 */
+            font-weight: 700;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        .suojin{
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="center">
+            Vanilla Faster-RCNN是一种基于深度学习的检测模型
+        </h1>
+        <p class="center">
+            <span class="coler1"> 2022年燕山大学</span>
+            <span class="coler2">有连龙</span>
+            <a href="#">信息科学</a>
+        </p>
+        <hr>
+        <p class="suojin">
+            Vanilla Faster-RCNN的主要贡献是引入了一个区域建议网络（Region Proposal Network，RPN），它可以与检测网络共享全图卷积特征，从而实现快速且高质量的区域建议。
+        </p>
+        <p class="suojin">
+            RPN是一个全卷积网络，它在每个位置同时预测候选区域的边界和目标性得分。RPN使用了一组预定义的锚框（anchor boxes），它们具有不同的尺度和长宽比，来覆盖不同大小和形状的目标。RPN对每个锚框输出一个边界框回归值和一个二分类得分（前景或背景）。
+        </p>
+        <p class="suojin">
+            Fast R-CNN是一个卷积网络，它以RPN生成的候选区域为输入，通过ROI池化层（Region of Interest Pooling Layer）将它们映射到固定大小的特征向量，然后通过两个全连接层输出一个边界框回归值和一个多分类得分（所有前景类别加一个背景类别）。
+        </p>
+
+    </div>
+</body>
+</html>
