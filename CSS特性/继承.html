@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* span会继承div的属性 */
+        /* 控制文字的属性才可以继承 */
+        /* 超链接的继承颜色失败了，自己有的就用自己的属性 */
+        /* h1并没有继承文字的大小 */
+        div{
+            color: red;
+            font-size: 12px;
+            height: 300px;
+        }
+        a{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        这是div中的文字
+        <span>这是div中的span</span>
+    </div>
+
+    <div>
+        <a href="#">超链接</a>
+        <h1>标题一</h1>
+    </div>
+</body>
+</html>

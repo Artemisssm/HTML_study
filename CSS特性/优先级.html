@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            color: orange;
+        }
+        .box{
+            color: blue;
+        }
+        div{
+            /* 将优先级提到最高 */
+            color: green !important;o
+        }
+        body{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 选择器选中的范围越广优先级越高 -->
+    <!-- 一个标签使用多个选择器并且样式冲突的时候 -->
+    <!-- id选择器的优先级高于类 -->
+    <!-- ！important不能用于继承 -->
+    <!-- 都是继承，就看继承里边谁高 -->
+    <div class="box" id="box" style="color: pink;">测试优先级</div>
+</body>
+</html>
