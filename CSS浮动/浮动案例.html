@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            width: 1226px;
+            height: 460px;
+            background-color: green;
+
+            margin: 0 auto;
+        }
+        .left{
+            width: 234px;
+            height: 460px;
+            background-color: orange;
+            float: left;
+
+            
+        }
+        .right{
+            width: 992px;
+            height: 460px;
+            background-color: blue;
+            float: left;
+        }
+        /* CSS的书写顺序 */
+        /* 1.浮动或者display */
+        /* 2.盒子模型相关的属性margin border padding 宽度 高度 背景色 */
+        /* 3.文字的样式 */
+
+    </style>
+</head>
+<body>
+    <!-- 先用一个父级的div使他版心居中 -->
+    <div class="content">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
