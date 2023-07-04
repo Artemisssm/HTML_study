@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        /* content属性必须添加否则伪元素不生效 */
+        /* 如果没有内容就用空表示 */
+        .father::before{
+            content: '老鼠';
+            color: blue;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: block;
+        }
+        .father::after{
+            content: '大米';
+        }
+    </style>
+</head>
+<body>
+    <!-- 伪元素，通过css创建标签，装饰性的不重要的小图 -->
+
+    <!-- 在父级标签的子集中创建标签用的 -->
+
+    <div class="father">ai</div>
+
+    <!-- 用css将标签补充完整老鼠ai大米 -->
+
+</body>
+</html>
