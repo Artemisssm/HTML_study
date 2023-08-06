@@ -356,4 +356,13 @@ h1{
     font-size: 12px;
     color: #333333;
 }
+.box .content li{
+    position: relative;
+}
+/* 课程中的hot定位 */
+.box .content li .hot{
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
 
