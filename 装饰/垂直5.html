@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 图在垂直方向居中需要对父级添加行高，然后对图片添加vertical-align */
+        .father{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            line-height: 600px;
+            /* 给图片添加居中 */
+            text-align: center;
+        }
+        .father img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="../day08/01-案例/images/1.jpg" alt="">
+    </div>
+</body>
+</html>

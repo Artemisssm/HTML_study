@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+        .one{
+            position: absolute;
+            left: 20px;
+            top: 50px;
+
+            background-color: pink;
+        }
+        .two{
+            position: absolute;
+            left: 50px;
+            top: 100px;
+
+            background-color: skyblue;
+            z-index: 2;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- 如果两个标签都定位了，则后边的会在上边显示 -->
+    <!-- z-index：整数属性，取值越大，显示顺序越靠上,默认值z-index是0 -->
+    <!-- 注意就是z-index必须配合定位使用 -->
+    <!-- z-index的值不带像素值 -->
+    <div class="two">two</div>
+    <div class="one">one</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            margin: 50px auto;
+
+            /* 一个值表示四个角的半径都是相同的 */
+            border-radius: 50px;
+
+            /* 如果给定四个值则是从左上角顺时针旋转 */
+            border-radius: 10px 20px 30px 40px;
+
+            /* 若有一个没有给则要看对角的元素 */
+            border-radius: 10px 40px 30px;
+
+            border-radius: 10px 80px;
+
+            /* 画一个正圆 */
+            border-radius: 50%;
+
+            
+        }
+        .jiao{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+
+            /* 画一个胶囊按钮，取高度的一半 */
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="jiao"></div>
+</body>
+</html>
