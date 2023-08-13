@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 一般过渡都是配合hover使用,谁变化谁加过渡属性 */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 从宽度200变为宽度600,花费1s钟的时长,添加逗号添加新的属性来变化 */
+            /* transition: width 1s,background-color 2s; */
+
+            /* 让所有变化了属性变化,用来处理变化的属性多的情况 */
+            transition: all 1s;
+
+
+        }
+        .box:hover{
+            width: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

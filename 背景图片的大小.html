@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+
+            background-image: url(day09-小兔鲜项目/day09/01-案例/images/1.jpg);
+            /* 不让他复制 */
+            background-repeat: no-repeat;
+            /* background-size: 300px; */
+            /* background-size: 50%; */
+            /* 只要宽和高和盒子一样就停止缩放，可能会导致盒子有留白 */
+            /* background-size: contain; */
+            /* 保证宽或者高和盒子的尺寸完全相同，整个背景都会被盒子覆盖 */
+            background-size: cover;
+
+            /* 工作中图的比例和盒子的比例是相同的，所以用contain和cover的效果完全相同 */
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box"></div>
 </body>
 </html>
