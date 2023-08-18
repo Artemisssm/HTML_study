@@ -1,0 +1,184 @@
+/* 各个页面相同的样式表：头，尾部 */
+
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut {
+	/* width: 1920px; */
+	height: 52px;
+	background-color: #333333;
+}
+
+.shortcut .wrapper{
+    height: 52px;
+    /* background-color: pink; */
+}
+/* 控制右浮动 */
+.shortcut .wrapper ul{
+    float: right;
+}
+/* li是块级标签所以需要浮动使他们在同一行排 */
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+.shortcut .wrapper a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper li:last-child a{
+    border-right: 0;
+}
+/* span是行内标签给行高没用 */
+.shortcut .wrapper a span{
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+
+    background-position: -160px -70px;
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+/* 头部 */
+.header{
+    height: 70px;
+    /* background-color: pink; */
+    margin: 30px auto;
+}
+.header h1 img{
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+.header ul{
+    float: left;
+    margin-left: 40px;
+    margin-right: 34px;
+    line-height: 70px;
+}
+.header ul li{
+    float: left;
+    margin-right: 48px;
+}
+.header ul li a:hover{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+.search{
+    float: left;
+    margin: 20px 0;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+    /* background-color: green; */
+}
+.search span a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    
+    background-image: url(../images/sprites.png);
+
+    background-position: -80px -70px;
+
+}
+.search input{
+    float: right;
+    width: 150px;
+    line-height: 28px;
+
+}
+.header .car a{
+    display: inline-block;
+    position: relative;
+    margin: 20px 0;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+}
+.header .car a span{
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* 版权footer */
+.footer{
+    height: 342px;
+    background-color: #333;
+}
+.footer .wrapper{
+    width: 1393px;
+}
+.footer .top{
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 1px solid #434343;
+}
+.footer .top li{
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+}
+.footer .top li:last-child{
+    margin-right: 0;
+}
+/* 伪元素添加的标签是行内现实模式 */
+/* 行内快或者行内文字无法通过行高或者vertical-align居中则用定位 */
+.footer .top li::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+.footer .top li span{
+    float: right;
+    font-size: 28px;
+    color: white;
+    line-height: 58px;
+}
+/* 第二个li中的before添加背景图位置属性 */
+.footer .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .top li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+.footer .bottom{
+    padding-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.footer .bottom a{
+    font-size: 14px;
+    color: #999;
+}
+.footer .bottom p{
+    margin-bottom: 20px;
+}
